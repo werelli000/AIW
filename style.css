@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief&display=swap');
+
+body {
+    background-color: rgb(189, 168, 210);
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Relief', cursive;
+}
+
+h3, p {
+    font-family: 'Comic Relief', cursive;
+    text-align: center;
+}
+
+button {
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: #a46cd2;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7d4bb5;
+}
+
+.name-input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #aaa;
+    font-size: 1rem;
+}
+
+
+.scene {
+    display: none;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+
+.scene.active {
+    display: flex;
+}
+
+
+@keyframes fadeInZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.scene.active {
+    display: flex;
+    animation: fadeInZoom 0.6s ease forwards;
+}
+   
+.btn{
+    display:inline-block;
+    width: 40%;
+}
+
+ .btn:hover{
+    background-color: #7d4bb5;
+    }
+
+    .btn:focus{
+        background-color: #7d4bb5;
+        }
+    
+
+   
+#scene0 {
+    background: url(img/фон0.jpg) no-repeat center center/cover;
+}

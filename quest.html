@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Квест: Аліса в Країні Чудес</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+  <section id="scene0" class="scene active">
+    <input type="text" class="name-input" placeholder="ваше ім’я">
+    <button data-target="scene1">далі</button>
+  </section>
+
+  <section id="scene0" class="scene active">
+    <input type="text" class="name-input" placeholder="ваше ім’я">
+    <button data-target="scene1">далі</button>
+  </section>
+
+  <section id="scene1" class="scene">
+    <p>Ви гуляєте в саду і помічаєте Білого Кролика з годинником.</p>
+    <h3>Що ви робите?</h3>
+    <p>a. Наздогнати Кролика.<br>b. Залишити його і продовжити прогулянку.</p>
+    <button data-target="scene2">варіант a</button>
+    <button data-target="scene9">варіант b</button>
+  </section>
+
+  <section id="scene2" class="scene">
+    <p>Ви стрибаєте в нору за Кроликом і падаєте довго-довго. Ви бачите безліч дверей.</p>
+    <h3>Яку оберете?</h3>
+    <p>a. Маленькі двері.<br>b. Великі двері.</p>
+    <button data-target="scene3">варіант a</button>
+    <button data-target="scene9">варіант b</button>
+  </section>
+
+  <section id="scene3" class="scene">
+    <p>За маленькими дверима ви потрапляєте до чарівного саду. Вас зустрічає Кіт Чеширський. Він усміхається і зникає.</p>
+    <h3>Що ви запитаєте в нього?</h3>
+    <p>a. Як вибратися звідси?<br>b. Де знайти Білого Кролика?</p>
+    <button data-target="scene4">варіант a</button>
+    <button data-target="scene5">варіант b</button>
+  </section>
+
+  <section id="scene4" class="scene">
+    <p>Кіт сміється і каже, що все тут залежить від вас.</p>
+    <h3>Продовжити шлях?</h3>
+    <p>a. Так, іду вперед.<br>b. Ні, намагаюся повернутися назад</p>
+    <button data-target="scene6">варіант a</button>
+    <button data-target="scene9">варіант b</button>
+  </section>
+
+  <section id="scene5" class="scene">
+    <p>Кіт вказує на стежку, що веде до Божевільного Капелюшника.</p>
+    <h3>Продовжити шлях?</h3>
+    <p>a. Йти до Капелюшника.<br>b. Повернутися до дверей.</p>
+    <button data-target="scene6">варіант a</button>
+    <button data-target="scene9">варіант b</button>
+  </section>
+
+  <section id="scene6" class="scene">
+    <p>Ви опиняєтеся на чаюванні у Божевільного Капелюшника та Березневого Зайця. Вони запрошують вас приєднатися.</p>
+    <h3>Що ви робите?</h3>
+    <p>a. Приєднатися до чаювання.<br>b. Вибачитися та продовжити шлях.</p>
+    <button data-target="scene7">варіант a</button>
+    <button data-target="scene8">варіант b</button>
+  </section>
+
+  <section id="scene7" class="scene">
+    <p>Під час чаювання ви дізнаєтеся, що Королева Червів влаштовує суд.</p>
+    <h3>Що ви робите?</h3>
+    <p>a. Вирушити на суд.<br>b. Спробувати знайти вихід.</p>
+    <button data-target="scene8">варіант a</button>
+    <button data-target="scene9">варіант b</button>
+  </section>
+
+  <section id="scene8" class="scene">
+    <p>Ви на суді Королеви Червів. Вас звинувачують у тому, що ви вкрали тістечко.</p>
+    <h3>Як захищатиметеся?</h3>
+    <p>a. Попросити докази<br>b. Сказати правду, що це непорозуміння.</p>
+    <button data-target="scene10">варіант a</button>
+    <button data-target="scene11">варіант b</button>
+  </section>
+
+  <section id="scene9" class="scene">
+    <h2>Кінець історії</h2>
+    <p>Ви вирішили повернутися або не дослідили далі пригоди. Можна почати знову!</p>
+    <button data-target="scene0">Почати спочатку</button>
+  </section>
+
+  <section id="scene10" class="scene">
+    <h2>Фінал A</h2>
+    <p>Королева не має доказів і вас виправдовують. Ви прокидаєтесь під деревом.</p>
+    <button data-target="scene0">Почати спочатку</button>
+  </section>
+
+  <section id="scene11" class="scene">
+    <h2>Фінал B</h2>
+    <p>Королева вражена вашою щирістю і відпускає вас. Ви залишаєте Країну Чудес з новими друзями.</p>
+    <button data-target="scene0">Почати спочатку</button>
+  </section>
+
+  
+  <script src="script.js" defer></script>
+</body>
+</html>
